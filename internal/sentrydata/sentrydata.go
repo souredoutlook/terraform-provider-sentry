@@ -49,7 +49,6 @@ var IssueGroupCategories = []string{
 	"Mobile",
 	"Ai_Detected",
 	"Preprod",
-	"Instrumentation",
 	"Configuration",
 }
 
@@ -72,7 +71,6 @@ var IssueGroupCategoryNameToId = map[string]string{
 	"Mobile":            "15",
 	"Ai_Detected":       "16",
 	"Preprod":           "17",
-	"Instrumentation":   "18",
 	"Configuration":     "19",
 }
 
@@ -95,7 +93,6 @@ var IssueGroupCategoryIdToName = map[string]string{
 	"15": "Mobile",
 	"16": "Ai_Detected",
 	"17": "Preprod",
-	"18": "Instrumentation",
 	"19": "Configuration",
 }
 
@@ -247,6 +244,7 @@ var DashboardWidgetDisplayTypes = []string{
 	"server_tree",
 	"text",
 	"agents_traces_table",
+	"heatmap",
 }
 
 // https://github.com/getsentry/sentry/blob/master/src/sentry/models/project.py
@@ -1166,6 +1164,7 @@ var DataConditionTypes = []string{
 	"percent_sessions_count",
 	"percent_sessions_percent",
 	"every_event",
+	"seer_activity_trigger",
 }
 
 // https://github.com/getsentry/sentry/blob/master/src/sentry/workflow_engine/models/data_condition.py
